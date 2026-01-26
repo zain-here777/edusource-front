@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import bannerBg from '../assets/images/banner/bannerbg.png';
+import bannerImage from '../assets/images/banner/bannerimage.png';
 import tag from '../assets/images/banner/tag.png';
 const Home = () => {
   return (
@@ -34,8 +35,8 @@ const Home = () => {
               Learn more
               </Link>
           </div>
-          <div className='flex flex-row items-start p-[24.94px_16.63px] gap-[24.94px] isolate h-[752.28px] w-full bg-[#F6F6F6] mt-[62px] border-[14px] border-white/30 rounded-[18px]'>
-
+          <div className='mt-[62px]'>
+              <img src={bannerImage} alt="bannerimage" className='object-cover' />
           </div>
         </div>
       </div>
