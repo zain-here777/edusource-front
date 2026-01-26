@@ -1,1 +1,135 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@theme {
+  /* General text colors */
+  --color-text: #1C1C1C;
+  --color-muted: #393F49;
+  --color-light:#71717A;
+  --color-dark:#1C1C1C;
+  --color-subheading:#1C1629;
+  --color-cardheading:#1C1629;
+  --color-cardtext:#666666;
+  --color-btnprimary:#ffffff;
+  
+  /* Button styles */
+  --btn-bg: linear-gradient(180deg, #555488 0%, #3330AF 100%);
+  --btn-shadow: 0px 16px 24px rgba(152, 135, 244, 0.16);
+  --btn-shadow-light: 0px 20px 30px rgba(152, 135, 244, 0.25);
+  --btn-radius: 50px;
+  
+  /* Secondary button styles */
+  --btn-secondary-bg: #FFFFFF;
+  --btn-secondary-shadow: 0px 1px 2px rgba(69, 69, 69, 0.24), 0px 0px 0px 1px rgba(71, 71, 71, 0.08);
+  --btn-secondary-radius: 99px;
+  
+  /* Typography styles */
+  --font-primary: "Urbanist", sans-serif;
+  --font-nav-weight: 400;
+  --font-nav-size: 16px;
+  --font-nav-line-height: 22.4px;
+  --font-nav-letter-spacing: 0%;
+  --background-image-brand-gradient: linear-gradient(
+    360deg, 
+    #6484FF -36.47%, 
+    #DAE3FF 100%
+  );
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.font-secondary {
+  font-family: "Source Serif 4", serif;
+}
+.btn-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 26px;
+  margin: 0 auto;
+  width: 168px;
+  height: 47px;
+  background: var(--btn-bg);
+  box-shadow: var(--btn-shadow);
+  border-radius: var(--btn-radius);
+  flex: none;
+  color: var(--color-btnprimary);
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: var(--font-nav-size);
+  line-height: var(--font-nav-line-height);
+  letter-spacing: var(--font-nav-letter-spacing);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--btn-shadow-light);
+}
+
+.btn-secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5.5px 24px;
+  width: 129px;
+  height: 48px;
+  background: var(--btn-secondary-bg);
+  box-shadow: var(--btn-secondary-shadow);
+  border-radius: var(--btn-secondary-radius);
+  flex: none;
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: var(--font-nav-size);
+  line-height: var(--font-nav-line-height);
+  letter-spacing: var(--font-nav-letter-spacing);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 2px 4px rgba(69, 69, 69, 0.3), 0px 0px 0px 1px rgba(71, 71, 71, 0.12);
+}
+
+*{
+  font-family: var(--font-primary);
+  box-sizing: border-box;
+}
+
+.hasshade::after{
+    content: "";
+    position: absolute;
+    width: 339px;
+    height: 934px;
+    filter: blur(6px);
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.5;
+    left: 0;
+    top: -370px;
+    transform: rotate(-55deg);
+    pointer-events: none;
+}
+.hasshade::before{
+  content: "";
+    position: absolute;
+    width: 339px;
+    height: 934px;
+    filter: blur(6px);
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.5;
+    right: 0;
+    top: -350px;
+    transform: rotate(-55deg);
+    pointer-events: none;
+    z-index: 1;
+}
