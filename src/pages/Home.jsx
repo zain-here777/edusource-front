@@ -7,8 +7,8 @@ const Home = () => {
       <img className="w-full h-[1164px] bg-brand-gradient  object-cover absolute top-0 left-0" src={bannerBg} alt="banner" />
       <div className="max-w-[1200px] pt-[171px] w-full h-max z-1 flex items-center justify-center">
         <div className='flex flex-col items-center text-center'>
-          <div className="flex flex-row justify-center items-center py-[11px] pl-[7px] pr-[11px] gap-[7px] h-[28px] bg-gradient-to-br from-[rgba(245,245,245,0)] via-[rgba(245,245,245,0.6)] to-[rgba(245,245,245,0.6)] border border-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.04)] drop-shadow-[0px_1px_2px_rgba(82,88,102,0.06)] rounded-[200px] font-medium text-light leading-5">
-            <img src={tag} alt="tag" />
+          <div className="flex mb-[14px] flex-row justify-center items-center py-[11px] pl-[7px] pr-[11px] gap-[7px] h-[28px] bg-gradient-to-br from-[rgba(245,245,245,0)] via-[rgba(245,245,245,0.6)] to-[rgba(245,245,245,0.6)] border border-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.04)] drop-shadow-[0px_1px_2px_rgba(82,88,102,0.06)] rounded-[200px] font-medium text-light leading-5">
+            <img className='w-auto h-[16px]' src={tag} alt="tag" />
             <span>
               Campus Commerce Platform
             </span>
@@ -33,6 +33,9 @@ const Home = () => {
               >
               Learn more
               </Link>
+          </div>
+          <div className='flex flex-row items-start p-[24.94px_16.63px] gap-[24.94px] isolate h-[752.28px] w-full bg-[#F6F6F6] mt-[62px] border-[14px] border-white/30 rounded-[18px]'>
+
           </div>
         </div>
       </div>
