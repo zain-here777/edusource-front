@@ -78,7 +78,7 @@
   justify-content: center;
   align-items: center;
   padding: 5.5px 24px;
-  width: 129px;
+  width: auto;
   height: 48px;
   background: var(--btn-secondary-bg);
   box-shadow: var(--btn-secondary-shadow);
@@ -105,31 +105,70 @@
   font-family: var(--font-primary);
   box-sizing: border-box;
 }
-
-.hasshade::after{
-    content: "";
-    position: absolute;
-    width: 339px;
-    height: 934px;
-    filter: blur(6px);
-    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
-    opacity: 0.5;
-    left: 0;
-    top: -370px;
-    transform: rotate(-55deg);
-    pointer-events: none;
-}
-.hasshade::before{
+.hasshade::after {
   content: "";
-    position: absolute;
-    width: 339px;
-    height: 934px;
-    filter: blur(6px);
-    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
-    opacity: 0.5;
-    right: 0;
-    top: -350px;
-    transform: rotate(-55deg);
-    pointer-events: none;
-    z-index: 1;
+  position: absolute;
+  width: 339px;
+  height: 934px;
+  filter: blur(6px);
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.5;
+  left: 0;
+  top: -370px;
+  transform: rotate(-55deg);
+  pointer-events: none;
+}
+
+.hasshade::before {
+  content: "";
+  position: absolute;
+  width: 339px;
+  height: 934px;
+  filter: blur(6px);
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.5;
+  right: 0;
+  top: -350px;
+  transform: rotate(-55deg);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hasshadow::after {
+  content: "";
+  position: absolute;
+  position: absolute;
+  width: 100%;
+  height: 310px;
+  left: 0px;
+  bottom: -0;
+  background: linear-gradient(360deg, #FFFFFF 26.69%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+
+.hasblurr::after {
+  content: '';
+  position: absolute;
+  width: 713px;
+  height: 460.75px;
+  left: 611px;
+  top: 156.37px;
+  pointer-events: none;
+  background: radial-gradient(50% 50% at 50% 50%, #C9D4FE 0%, rgba(201, 212, 254, 0) 100%);
+  opacity: 0.7;
+}
+
+.hasblurr::before {
+  content: "";
+  pointer-events: none;
+
+  position: absolute;
+  width: 774px;
+  height: 585.63px;
+  right: 282.91px;
+  top: 68px;
+
+  background: radial-gradient(50% 50% at 50% 50%, #F6F1FC 0%, rgba(246, 241, 252, 0) 100%);
+  opacity: 0.7;
+
 }

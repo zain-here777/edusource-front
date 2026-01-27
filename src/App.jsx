@@ -20,6 +20,7 @@ function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/bookdemo" element={<BookDemo />} />
           </Routes>
+          <WhyEdu/>
         </main>
         <Footer />
       </div>
