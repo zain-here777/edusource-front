@@ -2,11 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import WhyEdu from './pages/WhyEdu';
-import StoreModal from './pages/StoreModal';
+import WhyEdu from './components/landingpage/WhyEdu';
+import StoreModal from './components/landingpage/StoreModal';
 import Pricing from './pages/Pricing';
 import BookDemo from './pages/BookDemo';
 import CampusStore from './components/landingpage/CampusStore';
+import Growth from './components/landingpage/Growth';
 function App() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function App() {
           <WhyEdu/>
           <StoreModal />
           <CampusStore />
+          <Growth/>
         </main>
         <Footer />
       </div>
