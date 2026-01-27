@@ -41,7 +41,7 @@ const CampusStore = () => {
                 <p className="font-normal text-[18px] mt-[8px] leading-[1.66667] text-[#1c1c1c]">Track everything from textbooks to merchandise across all locations.</p>
               </div>
             </div>
-                    <div className="flex gap-[18px]">
+            <div className="flex gap-[18px]">
               <div className="w-[64px] h-[64px] self-start bg-[#E9E8FF] rounded-[106.667px] flex items-center justify-center">
                 <img src={inventoryIcon2} className="w-[25px]" alt="Smart Inventory Icon" />
               </div>
