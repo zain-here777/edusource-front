@@ -171,3 +171,15 @@
   opacity: 0.7;
 
 }
+.hasblurrdown::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 477px;
+    height: 477px;
+    right: -310px;
+    bottom: -50%;
+    border-radius: 100%;
+    background: #3b3bfa;
+    filter: blur(244px);
+}

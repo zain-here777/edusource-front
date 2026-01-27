@@ -11,7 +11,7 @@ const Growth = () => {
 	];
 
 	return (
-		<div className="bg-[rgba(10,10,42,0.03)] py-[90px] px-[20px] relative overflow-hidden">
+		<div className="bg-[rgba(10,10,42,0.03)] hasblurrdown py-[90px] px-[20px] relative overflow-hidden">
 			<div className="max-w-[1200px] mx-auto w-full relative z-[1]">
 				<div className="flex w-full items-center justify-center gap-[74px]">
 					<div className="flex-1 h-[479px] bg-gradient-to-b from-[#B0C0FF] to-[rgba(239,239,249,0)] rounded-[37px] relative flex items-center justify-center overflow-hidden">
