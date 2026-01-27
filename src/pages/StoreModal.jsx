@@ -24,7 +24,7 @@ const StoreModal = () => {
   ];
 
   return (
-    <div className="bg-[#F7F7F7] pt-[35px] pb-[159px] px-[20px] relative overflow-hidden">
+    <div className="bg-[#F7F7F7] py-[73px] px-[20px] relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto w-full relative z-[1]">
         <div className="flex items-center justify-center w-full">
          <div className='flex  justify-between gap-5 items-start text-center w-full'>
@@ -51,7 +51,7 @@ const StoreModal = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-[65px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-[44px]">
           {cards.map((card, index) => (
             <div key={index} className="flex flex-col justify-center items-start p-[18px]  bg-gradient-to-b from-[#F3F2FF] to-[#FFFFFF] border-[5px] border-white shadow-[0px_0.796192px_0.796192px_-1px_rgba(0,0,0,0.04),0px_2.41451px_2.41451px_-2px_rgba(0,0,0,0.04),0px_6.38265px_6.38265px_-3px_rgba(0,0,0,0.03),0px_20px_20px_-4px_rgba(0,0,0,0.01),inset_0px_0px_1px_1px_#FFFFFF] rounded-[16px] box-border">
               <h3 className="font-primary font-semibold text-[26px] leading-[28px] flex items-center text-[#000052]">
@@ -60,8 +60,7 @@ const StoreModal = () => {
               <p className="font-primary text-[16px] mt-[15px] leading-[30px] text-text">
                 {card.description}
               </p>
-               
-                <img src={card.icon} alt={card.title} className="h-[295px] mt-[20px]" />
+                <img src={card.icon} alt={card.title} className="h-[295px] w-full mt-[20px]" />
             </div>
           ))}
         </div>

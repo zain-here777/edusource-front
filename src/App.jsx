@@ -6,7 +6,7 @@ import WhyEdu from './pages/WhyEdu';
 import StoreModal from './pages/StoreModal';
 import Pricing from './pages/Pricing';
 import BookDemo from './pages/BookDemo';
-
+import CampusStore from './components/landingpage/CampusStore';
 function App() {
   return (
     <Router>
@@ -22,6 +22,7 @@ function App() {
           </Routes>
           <WhyEdu/>
           <StoreModal />
+          <CampusStore />
         </main>
         <Footer />
       </div>
