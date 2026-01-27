@@ -8,18 +8,18 @@ const StoreModal = () => {
   const cards = [
     {
       icon: icon1,
-      title: "Keep More Revenue On Campus",
-      description: "Maximize margins and reinvest directly into student programs"
+      title: "Inclusive Access Made Simple",
+      description: "Automate enrollments, billing, opt-outs, and publisher reporting."
     },
     {
       icon: icon2,
-      title: "Full Operational Control", 
-      description: "From pricing to promotions, you decide everything"
+      title: "Unified Commerce Engine", 
+      description: "One system for physical textbooks, digital materials, merchandise, and retail."
     },
     {
       icon: icon3,
-      title: "A Better Student Experience",
-      description: "Build a welcoming, service-focused store students trust."
+      title: "Frictionless Student Journey",
+      description: "A seamless experience for renting, shopping, or ordering online."
     }
   ];
 
@@ -53,15 +53,15 @@ const StoreModal = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-[65px]">
           {cards.map((card, index) => (
-            <div key={index} className="flex flex-col justify-center items-start p-[21px]  bg-gradient-to-b from-[#F3F2FF] to-[#FFFFFF] border-[5px] border-white shadow-[0px_0.796192px_0.796192px_-1px_rgba(0,0,0,0.04),0px_2.41451px_2.41451px_-2px_rgba(0,0,0,0.04),0px_6.38265px_6.38265px_-3px_rgba(0,0,0,0.03),0px_20px_20px_-4px_rgba(0,0,0,0.01),inset_0px_0px_1px_1px_#FFFFFF] rounded-[16px] box-border">
+            <div key={index} className="flex flex-col justify-center items-start p-[18px]  bg-gradient-to-b from-[#F3F2FF] to-[#FFFFFF] border-[5px] border-white shadow-[0px_0.796192px_0.796192px_-1px_rgba(0,0,0,0.04),0px_2.41451px_2.41451px_-2px_rgba(0,0,0,0.04),0px_6.38265px_6.38265px_-3px_rgba(0,0,0,0.03),0px_20px_20px_-4px_rgba(0,0,0,0.01),inset_0px_0px_1px_1px_#FFFFFF] rounded-[16px] box-border">
               <h3 className="font-primary font-semibold text-[26px] leading-[28px] flex items-center text-[#000052]">
                 {card.title}
               </h3>
-              <p className="font-primary text-[16px] mt-[12px] leading-[30px] text-text">
+              <p className="font-primary text-[16px] mt-[15px] leading-[30px] text-text">
                 {card.description}
               </p>
                
-                <img src={card.icon} alt={card.title} className="" />
+                <img src={card.icon} alt={card.title} className="h-[295px] mt-[20px]" />
             </div>
           ))}
         </div>
