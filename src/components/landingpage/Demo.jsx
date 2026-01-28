@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
-import tag from "../../assets/images/banner/tag.png";
-import check from "../../assets/images/campus-store/check.svg";
-import campus from "../../assets/images/campus-store/expertise.png";
+import shade1 from "../../assets/images/shades/shade-1.png";
+import shade2 from "../../assets/images/shades/shade-2.png";
+import lines from "../../assets/images/shades/lines.png";
+import stars from "../../assets/images/shades/stars.png";
 const Demo = () => {
 	return (
-		<div className="radientblue  py-[90px] px-[20px] relative overflow-hidden">
+		<div className="radientblue  relative py-[90px] px-[20px] relative overflow-hidden">
+			<img src={shade1} alt="" className="absolute right-0 top-0" />
+			<img src={shade2} alt="" className="absolute left-0 bottom-0" />
+			<img src={lines} alt="" className="absolute left-0 bottom-0 w-full object-contain" />
+			<img src={stars} alt="" className="absolute w-full right-0 top-0" />
 			<div className="max-w-[1200px] mx-auto w-full relative z-[1]">
 				<div className='flex flex-col items-center text-center w-full'>
 					<div className="flex items-center justify-center gap-4 w-full">
