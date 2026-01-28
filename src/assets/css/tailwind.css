@@ -183,3 +183,6 @@
     background: #3b3bfa;
     filter: blur(244px);
 }
+.radientblue{
+      background: linear-gradient(360deg, #3A63FF 2.58%, #DAE3FF 206.9%);
+}

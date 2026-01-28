@@ -8,6 +8,7 @@ import Pricing from './pages/Pricing';
 import BookDemo from './pages/BookDemo';
 import CampusStore from './components/landingpage/CampusStore';
 import Growth from './components/landingpage/Growth';
+import Demo from './components/landingpage/Demo';
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
           <StoreModal />
           <CampusStore />
           <Growth/>
+          <Demo/>
         </main>
         <Footer />
       </div>
