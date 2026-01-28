@@ -3,6 +3,7 @@ import shade1 from "../../assets/images/shades/shade-1.png";
 import shade2 from "../../assets/images/shades/shade-2.png";
 import lines from "../../assets/images/shades/lines.png";
 import stars from "../../assets/images/shades/stars.png";
+import AnimatedHeading from "../AnimatedHeading";
 const Demo = () => {
 	return (
 		<div className="radientblue  relative py-[90px] px-[20px] relative overflow-hidden">
@@ -13,14 +14,16 @@ const Demo = () => {
 			<div className="max-w-[1200px] mx-auto w-full relative z-[1]">
 				<div className='flex flex-col items-center text-center w-full'>
 					<div className="flex items-center justify-center gap-4 w-full">
-						<h1 className="font-primary font-semibold text-[66px] leading-[74px] inline-block tracking-[1px] text-white px-4">
-							Take Control of Your Campus  <span className='font-secondary block w-full italic font-normal text-white text-[66px]'>Commerce Future</span>
-						</h1>
+						<AnimatedHeading delay={0.05}>
+							<h1 className="font-primary font-semibold lg:text-[66px] text-[32px] lg:leading-[74px] leading-[36px] inline-block tracking-[1px] text-white px-4">
+								Take Control of Your Campus  <span className='font-secondary block w-full italic font-normal text-white lg:text-[66px] text-[32px]'>Commerce Future</span>
+							</h1>
+						</AnimatedHeading>
 					</div>
-					<p className='text-[26px] mt-[14px] leading-[38px] font-medium text-white max-w-[750px]'>
+					<p className='lg:text-[26px] text-[20px] mt-[14px] leading-[38px] font-medium text-white max-w-[750px]'>
 						Self-operation is powerful. With the right platform, it’s transformational.
 					</p>
-					<Link to="/pricing" className="mt-[50px] btn-secondary">
+					<Link to="/pricing" className="lg:mt-[50px] mt-[26px] btn-secondary">
 						Schedule Your Custom Demo 
 					</Link>
 				</div>

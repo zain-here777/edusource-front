@@ -7,6 +7,7 @@ import icon3 from "../../assets/images/whyus/icon-3.png";
 import inventoryIcon from "../../assets/images/campus-store/img-01.png";
 import inventoryIcon2 from "../../assets/images/campus-store/img-02.png";
 import campus from "../../assets/images/campus-store/campus.png";
+import AnimatedHeading from "../AnimatedHeading";
 
 const CampusStore = () => {
 	const features = [
@@ -28,7 +29,7 @@ const CampusStore = () => {
 	];
 
 	return (
-		<div className="bg-white py-[90px] px-[20px] relative hasblurr overflow-hidden">
+		<div className="bg-white lg:py-[90px] py-[30px] px-[20px] relative hasblurr overflow-hidden">
 			<div className="max-w-[1200px] mx-auto w-full relative z-[1]">
 				<div className="flex items-center justify-center w-full">
 					<div className='flex flex-col items-center text-center w-full'>
@@ -39,31 +40,33 @@ const CampusStore = () => {
 							</span>
 						</div>
 						<div className="flex items-center justify-center gap-4 w-full">
-							<div className="flex-1 h-[4px] min-w-[50px] bg-[#EBEAF6] shadow-[inset_0px_1px_1px_1px_rgba(0,0,0,0.1)] rounded-[7px]"></div>
-							<h1 className="font-primary font-semibold lg:text-[44px] text-[28px] lg:leading-[61px] leading-[36px] inline-block tracking-[1px] text-text px-4">
-								The Technology Backbone for Your  <span className='font-secondary  block w-full italic font-normal text-subheading text-[48px]'> Campus Store</span>
-							</h1>
-							<div className="flex-1 h-[4px] min-w-[50px] bg-[#EBEAF6] shadow-[inset_0px_1px_1px_1px_rgba(0,0,0,0.1)] rounded-[7px]"></div>
+							<div className="max-sm:hidden flex-1 h-[4px] min-w-[50px] bg-[#EBEAF6] shadow-[inset_0px_1px_1px_1px_rgba(0,0,0,0.1)] rounded-[7px]"></div>
+							<AnimatedHeading delay={0.05}>
+								<h1 className="font-primary font-semibold lg:text-[44px] text-[28px] lg:leading-[61px] leading-[36px] inline-block tracking-[1px] text-text px-4">
+									The Technology Backbone for Your  <span className='font-secondary italic font-normal text-subheading lg:text-[48px] text-[32px]'> Campus Store</span>
+								</h1>
+							</AnimatedHeading>
+							<div className="max-sm:hidden flex-1 h-[4px] min-w-[50px] bg-[#EBEAF6] shadow-[inset_0px_1px_1px_1px_rgba(0,0,0,0.1)] rounded-[7px]"></div>
 						</div>
 					</div>
 				</div>
-				<div className="mt-[52px] flex items-center justify-center gap-[43px]">
-					<div className="flex flex-col gap-[44px]">
+				<div className="mt-[52px] flex lg:items-center max-lg:flex-col-reverse justify-center gap-[43px] max-lg:flex-col">
+					<div className="flex flex-col lg:gap-[44px] gap-[24px]">
 						{features.map((feature, index) => (
-							<div key={index} className={index > 0 ? "border-t border-gray-200 pt-[44px]" : ""}>
+							<div key={index} className={index > 0 ? "border-t border-gray-200 lg:pt-[44px] pt-[24px]" : ""}>
 								<div className="flex gap-[18px]">
 									<div className="w-[64px] flex-none h-[64px] self-start bg-[#E9E8FF] rounded-[106.667px] flex items-center justify-center">
 										<img src={feature.icon} className="w-[auto]" alt={feature.title} />
 									</div>
-									<div className="flex flex-col">
-										<h3 className="font-semibold text-[26px] leading-[1.07692] text-[#000052]">{feature.title}</h3>
-										<p className="font-normal text-[18px] mt-[8px] leading-[1.66667] text-[#1c1c1c]">{feature.description}</p>
+									<div className="flex flex-col max-lg:self-center">
+										<h3 className="font-semibold lg:text-[26px] text-[20px] leading-[1.07692] text-[#000052]">{feature.title}</h3>
+										<p className="font-normal lg:text-[18px] text-[16px] mt-[8px] leading-[1.66667] text-[#1c1c1c]">{feature.description}</p>
 									</div>
 								</div>
 							</div>
 						))}
 					</div>
-					<div className="w-[599px] h-[540px] bg-gradient-to-b from-[#B0C0FF] to-[rgba(239,239,249,0)] rounded-[37px] relative flex items-center justify-center overflow-hidden">
+					<div className="lg:w-[599px] lg:h-[540px] w-[300px] h-[300px] max-lg:mx-auto bg-gradient-to-b from-[#B0C0FF] to-[rgba(239,239,249,0)] rounded-[37px] relative flex items-center justify-center overflow-hidden">
 						<img src={campus} className="w-full h-[inherit] object-contain absolute bottom-[-30px]" alt="Campus Store" />		
 					</div>
 				</div>

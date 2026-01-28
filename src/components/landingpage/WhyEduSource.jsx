@@ -5,7 +5,7 @@ import icon1 from "../../assets/images/whyus/icon-1.png";
 import icon2 from "../../assets/images/whyus/icon-2.png";
 import icon3 from "../../assets/images/whyus/icon-3.png";
 
-const WhyEdu = () => {
+const WhyEduSource = () => {
   const cards = [
     {
       icon: icon1,
@@ -70,4 +70,4 @@ const WhyEdu = () => {
   );
 };
 
-export default WhyEdu;
+export default WhyEduSource;

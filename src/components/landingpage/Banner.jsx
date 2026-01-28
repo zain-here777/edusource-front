@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import VanillaTilt from 'vanilla-tilt';
-import bannerBg from '../assets/images/banner/bannerbg.png';
-import bannerImage from '../assets/images/banner/bannerimage.png';
-import tag from '../assets/images/banner/tag.png';
-const Home = () => {
+import bannerBg from '../../assets/images/banner/bannerbg.png';
+import bannerImage from '../../assets/images/banner/bannerimage.png';
+import tag from '../../assets/images/banner/tag.png';
+const Banner = () => {
   const tiltRef = useRef(null);
 
   useEffect(() => {
@@ -86,4 +86,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Banner;
