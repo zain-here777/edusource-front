@@ -13,14 +13,14 @@ const Demo = () => {
 			<div className="max-w-[1200px] mx-auto w-full relative z-[1]">
 				<div className='flex flex-col items-center text-center w-full'>
 					<div className="flex items-center justify-center gap-4 w-full">
-						<h1 className="font-primary font-semibold text-[44px] leading-[66px] inline-block tracking-[1px] text-white px-4">
-							Take Control of Your Campus  <span className='font-secondary block w-full italic font-normal text-white text-[48px]'>Commerce Future</span>
+						<h1 className="font-primary font-semibold text-[66px] leading-[74px] inline-block tracking-[1px] text-white px-4">
+							Take Control of Your Campus  <span className='font-secondary block w-full italic font-normal text-white text-[66px]'>Commerce Future</span>
 						</h1>
 					</div>
-					<p className='text-[26px] mt-[14px] leading-[38px] font-medium text-white max-w-[800px]'>
+					<p className='text-[26px] mt-[14px] leading-[38px] font-medium text-white max-w-[750px]'>
 						Self-operation is powerful. With the right platform, it’s transformational.
 					</p>
-					<Link to="/pricing" className="mt-[24px] btn-secondary">
+					<Link to="/pricing" className="mt-[50px] btn-secondary">
 						Schedule Your Custom Demo 
 					</Link>
 				</div>
