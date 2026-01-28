@@ -27,7 +27,7 @@ const StoreModal = () => {
     <div className="bg-[#F7F7F7] py-[73px] px-[20px] relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto w-full relative z-[1]">
         <div className="flex items-center justify-center w-full">
-         <div className='flex  justify-between gap-5 items-start text-center w-full'>
+         <div className='flex  justify-between gap-5 items-start text-center w-full max-lg:flex-col max-lg:gap-5'>
             <div className="flex flex-1 flex-col">
               <div className="flex mb-[14px] flex-row justify-center items-center py-[11px] pl-[7px] pr-[11px] gap-[7px] h-[28px] bg-gradient-to-br from-[rgba(245,245,245,0)] via-[rgba(245,245,245,0.6)] to-[rgba(245,245,245,0.6)] border border-white shadow-[0px_0px_0px_1px_rgba(0,0,0,0.04)] drop-shadow-[0px_1px_2px_rgba(82,88,102,0.06)] rounded-[200px] font-medium w-max text-light leading-5">
                 <img className='w-auto h-[16px]' src={tag} alt="tag" />

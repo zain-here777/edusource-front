@@ -26,7 +26,7 @@ const Growth = () => {
 						</div>
 						<div className="flex items-center justify-center gap-4 w-full">
 							<h1 className="font-primary font-semibold text-[44px] leading-[61px] inline-block tracking-[1px] text-text">
-								More than software, A Partnership   <span className='font-secondary italic font-normal text-subheading text-[48px]'> For Growth</span>
+								More than software, A Partnership   <span className='font-secondary italic font-normal text-subheading lg:text-[48px] text-[32px]'> For Growth</span>
 							</h1>
 						</div>
 						<ul className="mt-[24px] flex flex-col gap-[18px]">

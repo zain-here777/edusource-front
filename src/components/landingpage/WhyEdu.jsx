@@ -37,12 +37,12 @@ const WhyEdu = () => {
             </div>
             <div className="flex items-center justify-center gap-4 w-full">
               <div className="flex-1 h-[4px] min-w-[50px] bg-[#EBEAF6] shadow-[inset_0px_1px_1px_1px_rgba(0,0,0,0.1)] rounded-[7px]"></div>
-              <h1 className="font-primary font-semibold text-[44px] leading-[61px] inline-block tracking-[1px] text-text px-4">
-                Why Schools Choose <span className='font-secondary italic font-normal text-subheading text-[48px]'>EduSource</span>
+              <h1 className="font-primary font-semibold lg:text-[44px] text-[28px] lg:leading-[61px] leading-[36px] inline-block tracking-[1px] text-text px-4">
+                Why Schools Choose <span className='font-secondary italic font-normal text-subheading lg:text-[48px] text-[32px]'>EduSource</span>
               </h1>
               <div className="flex-1 h-[4px] min-w-[50px] bg-[#EBEAF6] shadow-[inset_0px_1px_1px_1px_rgba(0,0,0,0.1)] rounded-[7px]"></div>
             </div>
-            <p className='text-[18px] mt-[14px] leading-[30px] font-medium text-dark max-w-[800px]'>
+            <p className='lg:text-[18px] text-[16px] mt-[14px] lg;leading-[30px] leading-[20px] font-medium text-dark max-w-[800px]'>
              Why Modern Institutions Choose EduSource
             </p>
           </div>

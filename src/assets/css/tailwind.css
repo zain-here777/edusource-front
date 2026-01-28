@@ -136,13 +136,16 @@
 .hasshadow::after {
   content: "";
   position: absolute;
-  position: absolute;
   width: 100%;
+  pointer-events: none;
   height: 310px;
   left: 0px;
   bottom: -0;
   background: linear-gradient(360deg, #FFFFFF 26.69%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
+  @media (max-width: 768px) {
+    height: 200px;
+  }
 }
 
 .hasblurr::after {
